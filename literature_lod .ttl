@@ -1,0 +1,29 @@
+@prefix lit: <http://book.org/lit/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema1: <http://schema.org/> .
+@prefix wikidata: <https://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lit:Rashomon a lit:Work ;
+    lit:hasAuthor lit:Akutagawa_Ryunosuke ;
+    lit:hasCharacter lit:Servant ;
+    lit:hasGenre lit:ShortStory ;
+    lit:writtenIn "1915"^^xsd:gYear ;
+    schema1:name "羅生門" ;
+    owl:sameAs wikidata:Q1144371 .
+
+lit:Akutagawa_Ryunosuke a lit:Author ;
+    lit:bornIn lit:Japan ;
+    schema1:name "芥川龍之介" ;
+    owl:sameAs wikidata:Q844614 .
+
+lit:Japan a lit:Country ;
+    schema1:name "日本" ;
+    owl:sameAs wikidata:Q17 .
+
+lit:Servant a lit:Character ;
+    schema1:name "下人" .
+
+lit:ShortStory a lit:Genre ;
+    schema1:name "短編小説" .
+
